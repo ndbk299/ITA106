@@ -1,24 +1,24 @@
-# import pandas as pd
-# import random
-# # Sinh dữ liệu tự động
-# students = []
-# for i in range(1, 101):
-#     ho = random.choice(["Nguyen", "Tran", "Le", "Pham", "Hoang"])
-#     ten_dem = random.choice(["Van", "Thi"])
-#     ten = random.choice(["An", "Bich", "Cuong", "Dao", "Duc", "Hoa", "Hung", "Lan", "Long", "Mai", 
-#                          "Minh", "Nga", "Nam", "Oanh", "Phuc", "Quyen", "Son", "Thao", "Tien", "Trang"])
-#     ho_ten = f"{ho} {ten_dem} {ten}"
-#     mssv = f"SV{i:03d}"
-#     chieu_cao = random.randint(157, 182)
-#     students.append({"HoTen": ho_ten, "MSSV": mssv, "ChieuCao": chieu_cao})
+import pandas as pd
+import random
+# Sinh dữ liệu tự động
+students = []
+for i in range(1, 101):
+    ho = random.choice(["Nguyen", "Tran", "Le", "Pham", "Hoang"])
+    ten_dem = random.choice(["Van", "Thi"])
+    ten = random.choice(["An", "Bich", "Cuong", "Dao", "Duc", "Hoa", "Hung", "Lan", "Long", "Mai", 
+                         "Minh", "Nga", "Nam", "Oanh", "Phuc", "Quyen", "Son", "Thao", "Tien", "Trang"])
+    ho_ten = f"{ho} {ten_dem} {ten}"
+    mssv = f"SV{i:03d}"
+    chieu_cao = random.randint(157, 182)
+    students.append({"HoTen": ho_ten, "MSSV": mssv, "ChieuCao": chieu_cao})
 
-# # Tạo DataFrame
-# df = pd.DataFrame(students)
+# Tạo DataFrame
+df = pd.DataFrame(students)
 
-# # Xuất ra CSV
-# df.to_csv("dataset_sinhvien.csv", index=False)
+# Xuất ra CSV
+df.to_csv("dataset_sinhvien.csv", index=False)
 
-# print(df)
+print(df)
 
 import pandas as pd
 import matplotlib.pyplot as plt
